@@ -27,10 +27,61 @@ export default function Header(){
             </div>
             <style jsx>{`
               /* ADD YOUR STYLES HERE */
-              header {
-                  color: #1d3557;
-                  background-color: white;
+                header {
+                    color: #1d3557;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0px 30px;
                 }
+
+                nav {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    column-gap: 20px;
+                }
+
+                .logo {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+                .lightbulb {
+                    width: 2rem;
+                }
+                
+                .button-group {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    column-gap: 5px;
+                }
+
+                button {
+                    background: #ffffff;
+                    color: #1d3557;
+                    
+                }
+                .search-button {
+                    width: 2rem;
+                    border: none;
+                }
+
+                .sign-up {
+                    border-color: #1d3557;
+                    border-radius: 5px;
+                    border-width: 1px;
+                    padding: 10px 10px;
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+
+
             `}</style>
         </header>
     )
